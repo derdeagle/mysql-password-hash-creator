@@ -9,7 +9,7 @@ C_TR="$(which tr)"
 C_XXD="$(which xxd)"
 
 echo -n "Please enter the MySQL password: "
-read PASSWORD
+read -s PASSWORD
 
 # check password length
 if [ ${#PASSWORD} -eq 0 ]; then
